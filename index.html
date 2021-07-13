@@ -45,6 +45,20 @@
 
         </div>
     </nav>
+        <script>let colorSchemeQueryList = window.matchMedia('(prefers-color-scheme: dark)');
+
+const setColorScheme = e => {
+  if (e.matches) {
+    background-colour:black;
+    console.log('Dark mode')
+  } else {
+    background-colour:white;
+    console.log('Light mode')
+  }
+}
+
+setColorScheme(colorSchemeQueryList);
+colorSchemeQueryList.addListener(setColorScheme);</script>
             <section id="Particle" class="parallax-container">
                 <div class="parallax-inner">
         
